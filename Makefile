@@ -8,7 +8,7 @@ target:
 	mvn package -DskipTests
 
 run:
-	docker run -it -p 8080:8080 $(REGISTRY)/$(PROJECT)
+	docker run -p 8080:8080 $(REGISTRY)/$(PROJECT)
 
 push:
 	docker push $(REGISTRY)/$(PROJECT)
